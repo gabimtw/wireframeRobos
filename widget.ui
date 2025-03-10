@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QFrame" name="bkgMainFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QFrame" name="bkgComandos">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>781</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QFrame" name="bkgComandosDefinidos">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>371</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="comandosPreDefinidos_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>261</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Leelawadee UI</family>
+        <pointsize>14</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comandosPreDefinidos_2{
+	color:  #00008b;
+	font: 14pt &quot;Leelawadee UI&quot;;
+	text-align: center;
+	font-weight: bolder;
+}</string>
+      </property>
+      <property name="text">
+       <string>Comandos Pré-Definidos</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comandosPreDefinidos">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>331</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#comandosPreDefinidos{
+	font-size: 14pt;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+	font: 14pt &quot;Leelawadee UI&quot;
+}
+#btnReceber:hover {
+    background-color: #2980b9;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Escolha 1</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Escolha 2</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="bkgComandosManuais">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>10</y>
+       <width>371</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="entradaManualComandos">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>311</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Leelawadee UI</family>
+        <pointsize>14</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#entradaManualComandos{
+	color:  #00008b;
+	font: 14pt &quot;Leelawadee UI&quot;;
+	text-align: center;
+	font-weight: bolder;
+}</string>
+      </property>
+      <property name="text">
+       <string>Entrada Manual de Comandos </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="digitarComandos">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>331</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#digitarComandos{
+	font-size: 14pt;
+    background-color: white;
+    color: #3498db;
+    border-radius: 5px;
+    padding: 5px 10px;
+	font: 16pt &quot;Leelawadee UI&quot;
+}
+#digitarComandos:hover {
+    background-color: #2980b9;
+	cursor: ibeam;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="btnEnviar">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>210</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Enviar ao Robô</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="bkgImagens">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>781</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btnReceber">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Leelawadee UI</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#btnReceber {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+	font: 14pt &quot;Leelawadee UI&quot;
+}
+#btnReceber:hover {
+    background-color: #00008b;
+}</string>
+     </property>
+     <property name="text">
+      <string>Receber Última Imagem</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ultimaImagem">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Leelawadee UI</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#ultimaImagem{
+	color:  #00008b;
+	font: 14pt &quot;Leelawadee UI&quot;;
+	text-align: center;
+	font-weight: bolder;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Última Imagem:</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="imagemDoRobo">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>81</y>
+       <width>551</width>
+       <height>201</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnVerDetalhes">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Leelawadee UI</family>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#btnVerDetalhes {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+	font: 12pt &quot;Leelawadee UI&quot;
+}
+#btnVerDetalhes:hover {
+    background-color: #2980b9;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Ver Com Detalhes</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
